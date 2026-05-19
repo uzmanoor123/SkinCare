@@ -2,196 +2,406 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
-        href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Jost:wght@100..900&family=Playfair+Display:wght@400..900&family=Poppins:wght@100..900&display=swap"
         rel="stylesheet">
+
     <link href="https://db.onlinewebfonts.com/c/34535e5191af23373eec0d4a4cba2988?family=Aeonik+TRIAL+Light"
         rel="stylesheet">
-    <link href="https://db.onlinewebfonts.com/c/0927e08fbdf95205b63c5b8774adeef6?family=Aeonik+TRIAL" rel="stylesheet" type="text/css"/>
+
+    <link href="https://db.onlinewebfonts.com/c/0927e08fbdf95205b63c5b8774adeef6?family=Aeonik+TRIAL"
+        rel="stylesheet">
+
     <link href="https://fonts.cdnfonts.com/css/satoshi" rel="stylesheet">
+
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
     <title>E-Commerce Skin Care Website</title>
 </head>
 
-<body style="font-family:'Aeonik TRIAL Light'" ;>
-    <header class="max-w-[1290px] h-[60px] mx-auto px-6">
-        <nav class="flex items-center px-8  mt-[50px] ">
-            <div>
-                <img src="public/logo.png" alt="not found" class="max-w-[240px] ">
-            </div>
-            <ul class="flex gap-8 ml-[210px]">
-                <li class=" text-[25px] font-normal text-[#2E2E2E] underline">Home</li>
-                <li class="font-light  text-[#545454] text-[25px] ">Shop</li>
-                <li class="font-light text-[25px] text-[#545454]">Spa</li>
-                <li class="font-light text-[25px] text-[#545454]">About</li>
-                <li class="font-light text-[25px] text-[#545454]">Contact</li>
+<body style="font-family:'Aeonik TRIAL Light';">
+
+    <!-- HEADER -->
+    <header class="max-w-[1290px] mx-auto px-6">
+
+        <nav class="flex items-center justify-between mt-[50px] px-8">
+
+            <img src="public/logo.png" alt="logo" class="max-w-[240px]">
+
+            <ul class="flex gap-8">
+                <li class="text-[25px] text-[#2E2E2E] underline">Home</li>
+                <li class="text-[25px] text-[#545454]">Shop</li>
+                <li class="text-[25px] text-[#545454]">Spa</li>
+                <li class="text-[25px] text-[#545454]">About</li>
+                <li class="text-[25px] text-[#545454]">Contact</li>
             </ul>
-            <div class="flex gap-5 items-center ml-[75px] w-[50px]">
+
+            <div class="flex gap-5 items-center">
                 <img src="public/bag.png" alt="bag">
                 <img src="public/heart.png" alt="heart">
                 <img src="public/profile.jpg" alt="profile">
             </div>
+
         </nav>
-        <div class="flex justify-between mt-5 px-8">
-            <ul class="flex items-center gap-[10px]">
-                <li class="text-[#121212] bg-[#EFEFEF] rounded-[5px] font-light text-[25px] px-[15px] py-[10px]">Women
-                </li>
-                <li class="text-[#121212] bg-[#EFEFEF] rounded-[5px] font-light text-[25px] px-[15px] py-[10px]">Men
-                </li>
-                <li class="text-[#121212] bg-[#EFEFEF] rounded-[5px] font-light text-[25px] px-[15px] py-[10px]">Kiddies
-                </li>
-                <li class="text-[#121212] bg-[#EFEFEF] rounded-[5px] font-light text-[25px] px-[15px] py-[10px]">New
-                </li>
-                <li class="text-[#121212] bg-[#EFEFEF] rounded-[5px] font-light text-[25px] px-[15px] py-[10px]">Popular
-                </li>
+
+        <div class="flex justify-between mt-8 px-8">
+
+            <ul class="flex items-center gap-[10px] flex-wrap">
+                <li class="bg-[#EFEFEF] rounded-[5px] text-[25px] px-[15px] py-[10px]">Women</li>
+                <li class="bg-[#EFEFEF] rounded-[5px] text-[25px] px-[15px] py-[10px]">Men</li>
+                <li class="bg-[#EFEFEF] rounded-[5px] text-[25px] px-[15px] py-[10px]">Kiddies</li>
+                <li class="bg-[#EFEFEF] rounded-[5px] text-[25px] px-[15px] py-[10px]">New</li>
+                <li class="bg-[#EFEFEF] rounded-[5px] text-[25px] px-[15px] py-[10px]">Popular</li>
             </ul>
-            <div class="mr-0 w-12">
-                <img src="public/search.png" alt="search not found" />
-            </div>
+
+            <img src="public/search.png" alt="search" class="w-12 h-12">
+
         </div>
     </header>
+
+    <!-- HERO -->
     <section class="mt-40">
-        <div class="bg-[#FFF6FD] max-w-[1290px] mx-auto h-[523px] flex justify-between px-12 py-14">
-            <div class="left-content flex flex-col mt-5 ml-5 items-start">
-                <h1 class="text-[50px] leading-[60px] tracking-[-0.5px] text-[#000000] not-italic font-semibold">Glow
-                    Beyond
+
+        <div
+            class="bg-[#FFF6FD] max-w-[1290px] mx-auto min-h-[523px] flex items-center justify-between px-12 py-14 rounded-2xl">
+
+            <div class="flex flex-col items-start">
+
+                <h1 class="text-[50px] leading-[60px] tracking-[-0.5px] font-semibold text-[#000000]">
+                    Glow Beyond
                     <img src="public/arrow1.png" class="w-[40px] h-[40px] inline-block" alt="arrow">
                     <br>
                     <span class="ml-40">Expectations</span>
                 </h1>
-                <p class="mt-3 mb-8 w-2/3">Clean, effective, and cruelty-free skincare made to deliver visible results.
-                </p>
-                <button
-                    class="rounded-full bg-[#121212] text-[#FFFFFF] px-6 py-2 flex gap-2 items-center text-[32px]">Shop
-                    Now
-                    <img src="public/arrow2.png" class="w-[40px] h-[40px] inline-block" alt="arrow"></button>
-            </div>
-            <div">
-                <img src="public/pic.png">
-        </div>
-        </div>
-    </section>
 
-    <section class="bg-[#F0F0F0] mt-[100px] max-w-[1280px] mx-auto h-[628px] px-[40px] py-[50px]">
-        <h1 style="font-family:'Aeonik TRIAL'" class="text-[#000000] font-medium text-[50px] tracking-tighter ">Why
-            Choose Xtragleam?
-        </h1>
-        <div class="flex items-center justify-between">
+                <p class="mt-4 mb-8 max-w-[450px] text-[20px]">
+                    Clean, effective, and cruelty-free skincare made to deliver visible results.
+                </p>
+
+                <button
+                    class="rounded-full bg-[#121212] text-white px-6 py-3 flex gap-2 items-center text-[28px]">
+                    Shop Now
+                    <img src="public/arrow2.png" class="w-[40px] h-[40px]" alt="arrow">
+                </button>
+
+            </div>
+
             <div>
-                <img src="public/img1.png" alt="not found" class="w-[559px] h-[427px] mt-[50px]" />
+                <img src="public/pic.png" alt="hero image">
             </div>
-            <div class="flex flex-col w-[617px] h-[288px] items-start">
-                <h2 style="font-family:'Aeonik TRIAL'" class="text-[27px] leading-[120%] tracking-[-1%]">Struggling with
-                    acne issues?</h2>
-                <p class="w-[617px] font-light text-[27px] leading-[150%] tracking-[-1%]">At Xtragleam Skincare, we
-                    understand how frustrating acne can be, and we’re here to
-                    help you regain
-                    confidence in your skin. Our carefully designed recovery process targets acne at its root while
-                    soothing and nourishing your skin for long-term health.
-                </p>
-                <button
-                    class="flex items-center text-[#000000] px-3 py-2 mt-[30px] gap-[5.5px] bg-[#FFFFFF] rounded-full text-[32px]">Explore
-                    Our
-                    Range <img src="public/arrow-right.png" alt="not found" class="inline-block"></button>
-            </div>
+
         </div>
+
     </section>
 
-    <section class="max-w-[1280px] mx-auto h-[947px] mt-[100px]">
+    <!-- WHY CHOOSE -->
+    <section class="bg-[#F0F0F0] mt-[100px] max-w-[1280px] mx-auto px-[40px] py-[50px] rounded-2xl">
+
+        <h2 class="text-[50px] tracking-[-1%]">
+            Why Choose Xtragleam?
+        </h2>
+
+        <div class="flex items-center justify-between gap-10 mt-[50px]">
+
+            <img src="public/img1.png" alt="image" class="w-[559px] h-[427px]">
+
+            <div class="flex flex-col items-start max-w-[617px]">
+
+                <h3 class="text-[27px] tracking-[-1%]">
+                    Struggling with acne issues?
+                </h3>
+
+                <p class="font-light text-[27px] leading-[150%] tracking-[-1%] mt-4">
+                    At Xtragleam Skincare, we understand how frustrating acne can be, and we’re here to help you
+                    regain confidence in your skin. Our carefully designed recovery process targets acne at its root
+                    while soothing and nourishing your skin for long-term health.
+                </p>
+
+                <button
+                    class="flex items-center text-black px-5 py-3 mt-[30px] gap-[5px] bg-white rounded-full text-[28px]">
+                    Explore Our Range
+                    <img src="public/arrow-right.png" alt="arrow">
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section class="max-w-[1280px] mx-auto mt-[100px]">
+
         <div class="flex justify-between items-center">
-            <h1 style="font-family:'Aeonik-TRIAL'"
-                class="font-normal text-[50px] leading-[100%] tracking-[-1%] not-italic">Discover Our Best-Sellers</h1>
-            <p class="underline font-light text-[30px] tracking-[-1%] underline-offset-4">View all</p>
-        </div>
-        <div class="grid grid-cols-3 mt-[50px] gap-[17px]">
-            <img src="public/card1.png" alt="not found">
-            <img src="public/card2.png" alt="not found">
-            <img src="public/card3.png" alt="not found">
-            <img src="public/card4.png" alt="not found">
-            <img src="public/card5.png" alt="not found">
-            <img src="public/card6.png" alt="not found">
-        </div>
-    </section>
-    
-    <section class="max-w-[1280px] mx-auto h-[1044px] bg-[#F0F0F0]">
-        <div class="w-[1237px]">
-            <h2>
-                Testimonial
+
+            <h2 class="text-[50px] tracking-[-1%]">
+                Discover Our Best-Sellers
             </h2>
-            <div>
-                <div class="grid grid-cols-3">
-                    <img src="public/test1.png">
-                    <img src="public/test2.png">
-                    <img src="public/test3.png">
-                    <img src="public/test4.png">
-                    <img src="public/test5.png">
-                    <img src="public/test6.png">
-                </div>
-            </div>
+
+            <p class="underline text-[30px] underline-offset-4">
+                View all
+            </p>
+
         </div>
+
+        <div class="grid grid-cols-3 gap-[17px] mt-[50px]">
+
+            <img src="public/card1.png" alt="">
+            <img src="public/card2.png" alt="">
+            <img src="public/card3.png" alt="">
+            <img src="public/card4.png" alt="">
+            <img src="public/card5.png" alt="">
+            <img src="public/card6.png" alt="">
+
+        </div>
+
     </section>
 
-    <section class="bg-[#F0F0F0] max-w-[1280px] mx-auto mt-[90px]">
-        <div class="flex justify-between items-center ml-[28px] py-[9px]">
-            <div class="flex flex-col items-start w-[617px] h-[466px] ">
-                <h1 style="font-family:'Aeonik TRIAL'" class=" text-[50px] font-normal leading-[100%] tracking-[-1%]">Your Guide to Radiant Skin</h1>
-                <h2 class="max-w-[617px] font-normal text-[27px] leading-[150%] tracking-[-1%] mt-[40px]">5 Mistakes That Might Be Hurting Your Skin</h2>
-                <p class="text-[27px] font-light leading-[150%] tracking-[-1%] max-w-[617px] h-[287px] mb-[60px]">
-                    Your skincare routine plays a crucial role in maintaining healthy, radiant skin. However, some
-                    common
-                    habits might be doing more harm than good. Here are five mistakes to avoid:
-                    1. Overwashing Your Face
-                    Washing too often or using harsh cleansers can strip......<a href="#" class="underline decoration-solid underline-offset-4">Continue Reading</a>
+    <!-- TESTIMONIALS MASONRY -->
+    <section class="max-w-[1280px] mx-auto bg-[#F0F0F0] mt-[100px] px-[20px] py-[60px] rounded-2xl">
+
+        <h2 class="text-[50px] tracking-[-1%] mb-[50px]">
+            Testimonials
+        </h2>
+
+        <!-- TRUE MASONRY -->
+        <div class="columns-3 gap-5">
+
+            <!-- CARD -->
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic1.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    2 weeks of using Glow Serum
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    After 2 weeks of using Xtragleam, my skin has never felt smoother. Thank you!”
+                    <span class="font-normal">
+                        – Lisa, Verified Buyer
+                    </span>
                 </p>
-                <button class="bg-[#FFFFFF] flex justify-center items-center w-[372px] gap-[7px] border-[0.71px] border-[#CFCFCF] rounded-[71px] px-[21px] py-[11px]"><span class=" max-w-[286px] h-[38px] text-[32px] font-light leading-[120%] tracking-[-1%] ">Read More Blog Post</span><img src="public/send.png" class="w-[35px] h-[35px]"></button>
             </div>
-            <div>
-                <img src="public/img2.png" alt="not found" class="w-[585px] h-[724px]">
+
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic2.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    Game Changer
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    The Glow Serum is a game-changer. My dark spots faded within weeks, and my skin feels so hydrated!
+                    <span class="font-normal">
+                        – Emma L., Verified Buyer
+                    </span>
+                </p>
             </div>
+
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic3.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    More Confident
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    I’ve struggled with acne for years, but Xtragleam changed everything!
+                    <span class="font-normal">
+                        – Sarah A., Verified Buyer
+                    </span>
+                </p>
+            </div>
+
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic4.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    Loved the Results
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    The products feel premium and actually work. My skin texture improved significantly.
+                    <span class="font-normal">
+                        – Jessica M.
+                    </span>
+                </p>
+            </div>
+
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic5.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    Dermatologist Recommendation
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    As a dermatologist, I recommend Xtragleam to my clients for its effective natural ingredients.
+                    <span class="font-normal">
+                        – Dr. Jane O.
+                    </span>
+                </p>
+            </div>
+
+            <div class="break-inside-avoid bg-white rounded-[17px] p-[20px] mb-5">
+                <img src="public/pic6.png" alt="" class="w-[102px] mb-5">
+                <h3 class="text-[25px] mb-3">
+                    Beauty Influencer Favorite
+                </h3>
+                <p class="text-[24px] font-light leading-[150%]">
+                    Xtragleam is my go-to for glowing skin before events!
+                    <span class="font-normal">
+                        – SkincareGuru
+                    </span>
+                </p>
+            </div>
+
         </div>
+
     </section>
-    <!--footer-->
-    <!-- <footer class="bg-[#121212] h-[350px] pt-[62px]" style="font-family: 'Satoshi', sans-serif;">
-        <div class="flex justify-between mx-[177px] mt-[10px]">
-            <div>
-                <img src="public/logo2.png" alt="not found" style="font-family: 'Playfair Display', serif;">
+
+    <!-- OFFER -->
+    <section
+        class="max-w-[1280px] mx-auto bg-gradient-to-r from-[#D1068C] via-[#1310A6] to-[#7E1B5C] mt-[100px] rounded-2xl py-[70px]">
+
+        <div class="flex flex-col justify-center items-center text-center px-10">
+
+            <h2 class="max-w-[967px] font-bold text-white text-[60px] leading-[100%] mb-[15px]">
+                Don’t Miss Out: Limited-Time Offer!
+            </h2>
+
+            <p class="max-w-[967px] text-white text-[38px] leading-[120%]">
+                Enjoy 20% off your first purchase with code
+                <span class="font-bold">GLOW20</span>
+            </p>
+
+            <h3 class="max-w-[998px] text-white text-[72px] leading-[120%] mt-[52px]">
+                Hurry, offer ends in 12hrs 30mins 56seconds
+            </h3>
+
+            <button
+                class="bg-white flex justify-center items-center gap-[7px] border border-[#CFCFCF] rounded-full px-[28px] py-[15px] text-[32px] mt-[50px]">
+
+                Shop the Sale
+
+                <img src="public/arrow3.png" class="w-[35px] h-[35px]" alt="arrow">
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- BLOG -->
+    <section class="bg-[#F0F0F0] max-w-[1280px] mx-auto mt-[90px] rounded-2xl">
+
+        <div class="flex justify-between items-center px-[28px] py-[40px] gap-10">
+
+            <div class="flex flex-col items-start max-w-[617px]">
+
+                <h2 class="text-[50px] tracking-[-1%]">
+                    Your Guide to Radiant Skin
+                </h2>
+
+                <h3 class="text-[27px] mt-[40px]">
+                    5 Mistakes That Might Be Hurting Your Skin
+                </h3>
+
+                <p class="text-[27px] font-light leading-[150%] mt-[30px]">
+                    Your skincare routine plays a crucial role in maintaining healthy, radiant skin.
+                    However, some common habits might be doing more harm than good...
+                    <a href="#" class="underline underline-offset-4">
+                        Continue Reading
+                    </a>
+                </p>
+
+                <button
+                    class="bg-white flex justify-center items-center gap-[7px] border border-[#CFCFCF] rounded-full px-[21px] py-[11px] mt-[40px]">
+
+                    <span class="text-[32px]">
+                        Read More Blog Post
+                    </span>
+
+                    <img src="public/send.png" class="w-[35px] h-[35px]" alt="send">
+
+                </button>
+
             </div>
+
+            <img src="public/img2.png" alt="" class="w-[585px] h-[724px]">
+
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#121212] mt-[100px] pt-[62px] pb-[30px]"
+        style="font-family: 'Satoshi', sans-serif;">
+
+        <div class="flex justify-between max-w-[1280px] mx-auto">
+
+            <img src="public/logo2.png" alt="logo">
+
             <div>
-                <h3 class="text-[#FFFFFF] font-[700]"> Quick Links</h3>
-                <ul>
-                    <li class="text-[#FFFFFFBF] font-[500]">Home</li>
-                    <li class="text-[#FFFFFFBF] font-[500]">Shop</li>
-                    <li class="text-[#FFFFFFBF] font-[500]">Spa</li>
-                    <li class="text-[#FFFFFFBF] font-[500]">About</li>
-                    <li class="text-[#FFFFFFBF] font-[500]">Contact Us</li>
-                    <li class="text-[#FFFFFFBF] font-[500]">Career</li>
+
+                <h3 class="text-white font-bold mb-3">
+                    Quick Links
+                </h3>
+
+                <ul class="space-y-2">
+                    <li class="text-[#FFFFFFBF]">Home</li>
+                    <li class="text-[#FFFFFFBF]">Shop</li>
+                    <li class="text-[#FFFFFFBF]">Spa</li>
+                    <li class="text-[#FFFFFFBF]">About</li>
+                    <li class="text-[#FFFFFFBF]">Contact Us</li>
+                    <li class="text-[#FFFFFFBF]">Career</li>
                 </ul>
+
             </div>
+
             <div>
-                <h3 class="text-[#FFFFFF] font-[700]">Company Links</h3>
-                <ul>
+
+                <h3 class="text-white font-bold mb-3">
+                    Company Links
+                </h3>
+
+                <ul class="space-y-2">
                     <li class="text-[#FFFFFFBF]">Privacy Policy</li>
                     <li class="text-[#FFFFFFBF]">Terms of Services</li>
                     <li class="text-[#FFFFFFBF]">Legal</li>
                 </ul>
+
             </div>
-            <div class="flex items-center flex-col">
-                <p class="text-[#FFFFFF] text-center mb-2 leading-4">Be the first to get notification <br>about our
-                    upcoming event</p>
-                <div class="flex w-72 p-[0.7px] bg-[#E9E9E9] rounded-sm items-center">
-                    <input type='email' placeholder='Email' class="text-[#8A8A8A] flex-1 ml-3" />
-                    <button class="text-[#FFFFFF] bg-[#000000] px-3 py-2 rounded-sm shrink-0">Submit</button>
+
+            <div class="flex flex-col items-center">
+
+                <p class="text-white text-center mb-3">
+                    Be the first to get notification
+                    <br>
+                    about our upcoming event
+                </p>
+
+                <div class="flex w-72 p-[1px] bg-[#E9E9E9] rounded-sm items-center">
+
+                    <input type="email" placeholder="Email"
+                        class="text-[#8A8A8A] flex-1 ml-3 outline-none bg-transparent">
+
+                    <button class="text-white bg-black px-3 py-2 rounded-sm">
+                        Submit
+                    </button>
+
                 </div>
+
             </div>
+
         </div>
-        <div class="border-t text-[#727272] mt-9 ">
-            <p class="text-[#FFFFFF] mt-5 text-center font-[300]">© 2024, Xtragleam Skincare. All Right Reserved</p>
+
+        <div class="border-t border-[#2A2A2A] mt-9 pt-5">
+
+            <p class="text-white text-center font-light">
+                © 2024, Xtragleam Skincare. All Rights Reserved
+            </p>
+
         </div>
-    </footer> -->
+
+    </footer>
+
 </body>
 
 </html>
