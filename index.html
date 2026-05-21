@@ -24,11 +24,11 @@
     <title>E-Commerce Skin Care Website</title>
 </head>
 
-<body style="font-family:'Aeonik TRIAL Light';">
+<body style="font-family:'Aeonik TRIAL Light';" class="p-[2px] border-2 border-red-300">
 
     <!-- HEADER -->
     <header class="max-w-[1290px] mx-auto gap-[34px]">
-        <nav class="flex items-center justify-between mt-[50px] gap-[196px]">
+        <nav class="flex items-center justify-between mt-[50px]">
 
             <img src="public/logo.png" alt="logo" class="max-w-[240px]">
 
@@ -111,15 +111,15 @@
         <div
             class="bg-[#FFF6FD] max-w-[1290px] mx-auto min-h-[523px] flex items-center justify-between px-12 py-14 rounded-[20px] relative">
 
-            <div class="flex flex-col items-start ">
-
-                <h1 class="text-[60px] leading-[100%] tracking-[-1%] font-semibold text-[#000000]">
-                    Glow Beyond
-                    <img src="public/arrow1.png" class="w-[45px] h-[45px] inline-block" alt="arrow">
-                    <br>
-                    <span class="ml-[238px]">Expectations</span>
+            <div>
+                <div class=" flex flex-col w-[587px]">
+                <h1 class="text-[60px] leading-[100%] tracking-[-1%] font-semibold text-[#000000] flex flex-col">
+                    <span class="flex items-center">Glow Beyond
+                    <img src="public/arrow1.png" class="w-[45px] h-[45px] inline-block ml-2" alt="arrow">
+                    </span>
+                    <span class="self-end">Expectations</span>
                 </h1>
-
+                </div>
                 <p class="mt-[13px] mb-[40px] max-w-[587px] text-[30px]">
                     Clean, effective, and cruelty-free skincare made to deliver visible results.
                 </p>
@@ -134,7 +134,7 @@
             </div>
 
             <div>
-                <img src="public/pic.png" alt="hero image" class="absolute bottom-0 right-0">
+                <img src="public/pic.png" alt="hero image" class="absolute bottom-0 right-0 max-[1070px]:min-w-[100px]">
 
             </div>
 
@@ -149,7 +149,7 @@
 
         <div class="flex items-center justify-between gap-10 mt-[50px]">
 
-            <img src="public/img1.png" alt="image" class="w-[559px] h-[427px]">
+            <img src="public/img1.png" alt="image" class="w-[559px] h-[427px] ">
 
             <div class="flex flex-col items-start max-w-[617px]">
 
@@ -177,9 +177,8 @@
 
     <!-- BEST SELLERS -->
 
-     <section class="max-w-[1280px] mx-auto mt-[100px]">
-
-        <div class="flex justify-between items-center">
+    <section class="max-w-[1280px] mx-auto  mt-[100px] h-[947px]">
+        <div class="flex justify-between items-center mb-[50px]">
 
             <h2 style="font-family:'Aeonik TRIAL regular';"
                 class="text-[50px] tracking-[-1%] leading-[100%] font-normal">
@@ -189,20 +188,275 @@
             <p class="underline text-[30px] underline-offset-4 hover:cursor-pointer hover:translate-x-1 transition ">
                 View all
             </p>
-
         </div>
+        <!-- all cards -->
+        <div class="grid grid-cols-3 gap-[17px]">
+            <!-- card no 1  -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px] rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Best Seller
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
 
-        <div class="grid grid-cols-3 gap-[17px] mt-[50px]">
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo1.png" alt=""
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            X5 Extreme Body Lotion
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦35,000</span>
+                            <span class="text-[#000000] font-normal">₦30,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
 
-            <img src="public/card1.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
-            <img src="public/card2.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
-            <img src="public/card3.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
-            <img src="public/card4.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
-            <img src="public/card5.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
-            <img src="public/card6.png" alt="" class=" hover:cursor-pointer hover:scale-105 transition duration-300">
+            <!-- card no 2 -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px] rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Refined
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
 
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo2.png" alt="X5 Extreme Body Lotion"
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            AHA Face Toner
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦75,000</span>
+                            <span class="text-[#000000] font-normal">₦60,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
+            <!-- card no 3  -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px]  rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Top
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo3.png" alt="X5 Extreme Body Lotion"
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            Anti Strecthmark Oil
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦75,000</span>
+                            <span class="text-[#000000] font-normal">70,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
+            <!-- card no 4  -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px]  rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Best Seller
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo4.png" alt="X5 Extreme Body Lotion"
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            Acne Serum
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦35,000</span>
+                            <span class="text-[#000000] font-normal">₦30,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
+            <!-- card no 5  -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px]  rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Best Seller
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo5.png" alt="X5 Extreme Body Lotion"
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            Luminous Body Lotion
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦35,000</span>
+                            <span class="text-[#000000] font-normal">₦30,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
+            <!-- card no 6  -->
+            <div
+                class="bg-[#F0F0F0] max-w-[415px]  rounded-[18px] items-center hover:cursor-pointer hover:scale-105 transition duration-300 border border-[#0000001A] overflow-hidden ">
+                <div class="flex justify-between p-6">
+                    <div>
+                        <h2 style="font-family:'Aeonik TRIAL regular';"
+                            class="flex flex-col text-[20px] leading-[98%] tracking-[-1%] w-[95px] h-[19px]">
+                            Best Seller
+                        </h2>
+                        <p>★★★★★</p>
+                    </div>
+                    <svg width="40" height="40" viewBox="0 0 40 40" class="hover:fill-red-500 hover:cursor-pointer"
+                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" fill="white" />
+                        <rect x="0.5" y="0.5" width="39" height="39" rx="19.5" stroke="#8B8B8B" />
+                        <path
+                            d="M20.5741 28.1574C20.2593 28.2685 19.7408 28.2685 19.4259 28.1574C16.7408 27.2408 10.7408 23.4167 10.7408 16.9352C10.7408 14.0741 13.0463 11.7593 15.8889 11.7593C17.5741 11.7593 19.0648 12.5741 20 13.8334C20.9352 12.5741 22.4352 11.7593 24.1111 11.7593C26.9537 11.7593 29.2593 14.0741 29.2593 16.9352C29.2593 23.4167 23.2593 27.2408 20.5741 28.1574Z"
+                            stroke="#8B8B8B" stroke-width="0.963608" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+                </div>
+                <div class="flex items-center justify-center h-44 mb-3">
+                    <img src="/public/photo6.png" alt="X5 Extreme Body Lotion"
+                        class="h-36 w-auto object-contain drop-shadow-sm" />
+                </div>
+                <!-- bottom section -->
+                <div
+                    class="flex justify-between place-items-center bg-[#FFFFFF] max-w-[414px] p-6 border-t border-[#E4E4E4] ">
+                    <div class="flex flex-col gap-[5px]">
+                        <h4>
+                            Skin Glow Moisturizing Lotion
+                        </h4>
+                        <div class="flex gap-[5px]">
+                            <span class="line-through text-[#00000069]">₦35,000</span>
+                            <span class="text-[#000000] font-normal">₦30,000</span>
+                        </div>
+                    </div>
+                    <button
+                        class=" bg-[#121212] text-[#FFFFFF] w-[137px] h-[40px] flex items-center justify-center gap-[10px] rounded-[40px] px-[10px] py-[5px]">
+                        Add to Cart
+                        <img src="public/bag-2.png">
+                    </button>
+                </div>
+            </div>
         </div>
-
     </section>
 
     <!-- TESTIMONIALS MASONRY -->
@@ -323,7 +577,7 @@
             </h3>
 
             <button
-                class="bg-white flex justify-center items-center gap-[7px] border border-[#CFCFCF] rounded-full px-[21px] py-[10px] text-[32px] mt-[50px] hover:cursor-pointer group hover:bg-cyan-300 hover:text-white transition duration-300 hover:translate-x-2">
+                class="bg-white flex justify-center items-center gap-[7px] border border-[#CFCFCF] rounded-full px-[21px] py-[10px] text-[32px] mt-[50px] hover:cursor-pointer group hover:bg-[#D1068C] hover:text-white transition duration-300 hover:translate-x-2">
                 Shop the Sale
                 <img src="public/arrow3.png" class="w-[35px] h-[35px] group-hover:translate-x-2" alt="arrow">
 
